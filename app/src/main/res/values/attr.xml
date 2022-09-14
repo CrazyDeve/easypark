@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    带清理图标的EditText-->
+    <declare-styleable name="EditTextWithClearView">
+        <attr name="textSize" format="dimension" />
+        <attr name="textColor" format="color" />
+        <attr name="hint" format="string"/>
+        <attr name="textHintColor" format="color" />
+        <attr name="paddingLeft" format="dimension" />
+        <attr name="paddingRight" format="dimension" />
+        <attr name="paddingTop" format="dimension" />
+        <attr name="paddingBottom" format="dimension" />
+        <attr name="marginLeft" format="dimension" />
+        <attr name="marginRight" format="dimension" />
+        <attr name="marginTop" format="dimension" />
+        <attr name="marginBottom" format="dimension" />
+
+    </declare-styleable>
+</resources>

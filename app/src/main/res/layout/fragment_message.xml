@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentScrim="@color/white"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:statusBarScrim="@color/white">
+
+            <include layout="@layout/layout_title" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <com.benben.carmanager.view.MySwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_ECECEC"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_manager"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_60"
+                android:background="@color/color_F2F2F2">
+
+                <com.benben.carmanager.view.CircleImageView
+                    android:id="@+id/mgr_icon"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:src="@mipmap/ic_user_placeholder"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_msgType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:text="管理员消息"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/font_size_14"
+                    app:layout_constraintLeft_toRightOf="@+id/mgr_icon"
+                    app:layout_constraintTop_toTopOf="@+id/mgr_icon" />
+
+                <TextView
+                    android:id="@+id/tv_msg"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_5"
+                    android:ellipsize="end"
+                    android:paddingRight="@dimen/dp_12"
+                    android:singleLine="true"
+                    android:text="智能点餐功能上线了,赶快去下载吧！智能点餐功能上线了,赶快去下载吧！智能点餐功能上线了,赶快去下载吧！智能点餐功能上线了,赶快去下载吧！"
+                    android:textColor="@color/color_999999"
+                    android:textSize="@dimen/font_size_12"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_response"
+                    app:layout_constraintLeft_toLeftOf="@+id/tv_msgType"
+                    app:layout_constraintStart_toStartOf="@id/tv_msgType"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_msgType" />
+
+                <TextView
+                    android:id="@+id/tv_response"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:layout_marginRight="@dimen/dp_12"
+                    android:background="@color/color_1abc9c"
+                    android:paddingHorizontal="@dimen/dp_8"
+                    android:paddingVertical="@dimen/dp_4"
+                    android:text="下载"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_14"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/color_cccccc"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.yanzhenjie.recyclerview.SwipeRecyclerView
+                android:id="@+id/rv_msg_project"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_marginRight="@dimen/dp_12" />
+        </LinearLayout>
+
+    </com.benben.carmanager.view.MySwipeRefreshLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

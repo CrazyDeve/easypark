@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_12"
+    android:id="@+id/cl_root"
+    android:paddingBottom="@dimen/dp_12"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/dp_8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/dp_8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="@dimen/dp_8" />
+
+    <ImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_180"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:layout_marginRight="@dimen/dp_8"
+        android:scaleType="centerCrop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line3" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="鸡翅怎么做好吃"
+        android:textColor="@color/color_000000"
+        android:textSize="@dimen/font_size_16"
+        app:layout_constraintLeft_toRightOf="@+id/line1"
+        app:layout_constraintTop_toBottomOf="@+id/iv_photo"
+        android:layout_marginTop="@dimen/dp_12"/>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="39分钟"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/font_size_12"
+        android:drawableLeft="@mipmap/icon_time"
+        android:drawablePadding="@dimen/dp_5"
+        app:layout_constraintLeft_toRightOf="@+id/line1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        android:layout_marginTop="@dimen/dp_8"/>
+
+    <View
+        android:id="@+id/line4"
+        android:layout_width="@dimen/dp_1"
+        android:layout_height="@dimen/dp_12"
+        app:layout_constraintLeft_toRightOf="@+id/tv_time"
+        app:layout_constraintTop_toTopOf="@+id/tv_time"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_time"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:background="@color/color_cccccc"/>
+
+    <TextView
+        android:id="@+id/tv_projectName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="美食专题"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/font_size_12"
+        android:drawablePadding="@dimen/dp_5"
+        app:layout_constraintLeft_toRightOf="@+id/line4"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:layout_marginTop="@dimen/dp_8"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#7C7FFA</color>
+    <color name="colorPrimaryDark">#7C7FFA</color>
+    <color name="colorAccent">#7AFBC3</color>
+
+    <color name="white">#ffffff</color>
+    <color name="theme_color">#7C7FFA</color>
+    <color name="theme_blue_qian">#7AFBC3</color>
+    <color name="color_red">#ff3b30</color>
+    <color name="color_000000">#000000</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_cccccc">#cccccc</color>
+    <color name="color_eeeeee">#eeeeee</color>
+    <color name="color_DADBE0">#DADBE0</color>
+    <color name="color_ECECEE">#ECECEE</color>
+    <color name="color_ECECEC">#ECECEC</color>
+    <color name="color_f5f5f5">#f5f5f5</color>
+    <color name="color_F2F2F2">#F2F2F2</color>
+    <color name="color_F7F7F7">#F7F7F7</color>
+    <color name="color_ebebeb">#EBEBEB</color>
+    <color name="color_f9f9f9">#f9f9f9</color>
+    <color name="color_1abc9c">#1abc9c</color>
+    <color name="color_FEE21F">#FEE21F</color>
+    <color name="color_FF9800">#FF9800</color>
+    <color name="color_169bd5">#169bd5</color>
+    <color name="transparent">#00000000</color>
+    <color name="design_3700b3">#3700b3</color>
+    <color name="design_6200ee">#6200ee</color>
+    <color name="design_03dac6">#03dac6</color>
+    <color name="design_018786">#018786</color>
+    <color name="design_b00020">#b00020</color>
+    <color name="color_245676">#245676</color>
+
+
+    <color name="main_color">#7C7FFA</color>
+    <color name="main_background">#FFFFFF</color>
+    <color name="main_color_sconde">#7AFBC3</color>
+    <color name="main_color_three">#E95CA4</color>
+    <color name="color_word">#E95CA4</color>
+    <color name="HUI">#EFEFEF</color>
+    <color name="LIANGBAI">#FDFDFD</color>
+    <color name="color_true">#a4cab6</color>
+    <color name="color_error">#ed5a65</color>
+
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="recommend_color1">#FEF5E4</color>
+    <color name="recommend_color2">#DEFAFF</color>
+    <color name="recommend_color3">#E4F1FF</color>
+    <color name="recommend_color4">#FFF0E5</color>
+    <color name="color_dadada">#dadada</color>
+
+
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="toolbar_height">40dp</dimen>
+    <dimen name="font_size_10">10sp</dimen>
+    <dimen name="font_size_12">12sp</dimen>
+    <dimen name="font_size_14">14sp</dimen>
+    <dimen name="font_size_16">16sp</dimen>
+    <dimen name="sp_16">16sp</dimen>
+    <dimen name="font_size_18">18sp</dimen>
+    <dimen name="font_size_20">20sp</dimen>
+    <dimen name="font_size_22">22sp</dimen>
+
+
+
+    <dimen name="dp_03">0.3dp</dimen>
+    <dimen name="dp_1">1dp</dimen>
+    <dimen name="dp_4">4dp</dimen>
+    <dimen name="dp_5">5dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_12">12dp</dimen>
+    <dimen name="dp_14">14dp</dimen>
+    <dimen name="dp_15">15dp</dimen>
+    <dimen name="dp_16">16dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_22">22dp</dimen>
+    <dimen name="dp_24">24dp</dimen>
+    <dimen name="dp_30">30dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_48">48dp</dimen>
+    <dimen name="dp_50">50dp</dimen>
+    <dimen name="dp_60">60dp</dimen>
+    <dimen name="dp_62">62dp</dimen>
+    <dimen name="dp_70">70dp</dimen>
+    <dimen name="dp_80">80dp</dimen>
+    <dimen name="dp_100">100dp</dimen>
+    <dimen name="dp_112">112dp</dimen>
+    <dimen name="dp_120">120dp</dimen>
+    <dimen name="dp_300">300dp</dimen>
+    <dimen name="dp_500">500dp</dimen>
+    <dimen name="dp_200">200dp</dimen>
+    <dimen name="dp_2">2dp</dimen>
+    <dimen name="dp_18">18dp</dimen>
+    <dimen name="dp_28">28dp</dimen>
+    <dimen name="dp_23">23dp</dimen>
+    <dimen name="dp_180">180dp</dimen>
+    <dimen name="font_size_28">28sp</dimen>
+    <dimen name="dp_400">400dp</dimen>
+    <dimen name="dp_150">150dp</dimen>
+    <dimen name="dp_85">85dp</dimen>
+    <dimen name="dp_90">90dp</dimen>
+
+
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- default item size -->
+    <dimen name="default_img_size">96dp</dimen>
+    <dimen name="default_ui_height">48dp</dimen>
+    <dimen name="default_button_height">40dp</dimen>
+    <dimen name="default_button_margin_vertical">4dp</dimen>
+    <dimen name="default_button_margin_horizontal">4dp</dimen>
+    <dimen name="default_button_text_size">16dp</dimen>
+
+    <dimen name="default_icon_size">32dp</dimen>
+    <dimen name="default_icon_margin">8dp</dimen>
+
+    <dimen name="default_ui_margin_very_small">2dp</dimen>
+    <dimen name="default_ui_margin_small">4dp</dimen>
+    <dimen name="default_ui_margin">8dp</dimen>
+    <dimen name="default_ui_margin_medium">12dp</dimen>
+    <dimen name="default_ui_margin_large">16dp</dimen>
+    <dimen name="default_ui_margin_huge">32dp</dimen>
+
+    <dimen name="text_size_micro">12sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_medium">18sp</dimen>
+    <dimen name="text_size_large">22sp</dimen>
+    <dimen name="text_size_huge">26sp</dimen>
+
+</resources>

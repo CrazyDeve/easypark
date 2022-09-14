@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/userINfo"
+        android:icon="@drawable/slide_donate_icon"
+        android:title="个人中心"></item>
+
+    <item
+        android:id="@+id/updatePass"
+        android:icon="@drawable/slide_setting_icon"
+        android:title="修改密码"></item>
+
+    <item
+        android:id="@+id/car_mgr"
+        android:icon="@drawable/slide_setting_icon"
+        android:title="车辆管理"></item>
+
+    <item android:id="@+id/loginout"
+        android:icon="@drawable/slide_setting_icon"
+        android:title="退出登录"></item>
+
+</menu>

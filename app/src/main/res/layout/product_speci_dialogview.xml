@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_20">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:gravity="start"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/color_000000"
+            android:textSize="@dimen/font_size_16"
+            android:textStyle="bold"
+            tools:text="标题" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:src="@mipmap/ic_close" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="规格"
+        android:textColor="@color/color_999999" />
+
+    <!--    规格展示-->
+    <com.benben.carmanager.view.AutoNextLinearLayout
+        android:id="@+id/ll_speci"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_30"
+            android:background="@drawable/btn_shape_selector"
+            android:gravity="center"
+            android:text="小份"
+            android:textColor="@color/color_333333" />
+
+        <TextView
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_30"
+            android:background="@drawable/btn_shape_selector"
+            android:gravity="center"
+            android:text="中份"
+            android:textColor="@color/color_333333" />
+
+        <TextView
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_30"
+            android:background="@drawable/btn_shape_selector"
+            android:gravity="center"
+            android:text="大份"
+            android:textColor="@color/color_333333" />
+
+
+    </com.benben.carmanager.view.AutoNextLinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_30"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_20"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/rmb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rmb"
+                android:textColor="@color/color_red"
+                android:layout_alignParentBottom="true"
+                android:textSize="@dimen/font_size_10" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="0.00"
+                android:layout_toRightOf="@+id/rmb"
+                android:layout_alignBottom="@id/rmb"
+                android:textColor="@color/color_red"
+                android:textSize="@dimen/font_size_16" />
+
+        </RelativeLayout>
+
+
+
+
+        <ImageView
+            android:id="@+id/iv_sub"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:src="@mipmap/ic_jian" />
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="@dimen/dp_40"
+            android:layout_marginHorizontal="@dimen/dp_15"
+            android:text="0"
+            android:gravity="center"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/font_size_20" />
+
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:src="@mipmap/ic_jia" />
+    </LinearLayout>
+
+
+</LinearLayout>

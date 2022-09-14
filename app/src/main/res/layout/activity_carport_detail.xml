@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/layout_title"
+        />
+
+    <View
+        android:id="@+id/line0"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_03"
+        android:background="@color/color_cccccc"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp_12"
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_marginBottom="@dimen/dp_16"
+            android:elevation="@dimen/dp_16"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/dp_8"
+            android:layout_gravity="bottom">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dp_12">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/dp_12"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_carport_title"
+                            style="@style/b_text_bold_style"
+                            android:layout_marginLeft="@dimen/dp_12"
+                            tools:text="北京停车场" />
+
+                        <TextView
+                            android:id="@+id/tv_addr"
+                            style="@style/desc_text_style"
+                            android:layout_marginTop="@dimen/dp_24"
+                            android:layout_marginLeft="@dimen/dp_12"
+                            tools:text="北京停车场" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_nav"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingHorizontal="@dimen/dp_12"
+                        android:src="@mipmap/icon_nav"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_reserve"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_48"
+                    android:layout_marginLeft="@dimen/dp_12"
+                    android:background="@drawable/btn_shape_themecolor"
+                    android:gravity="center"
+                    android:paddingHorizontal="@dimen/dp_24"
+                    android:text="车位预约"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="@dimen/dp_16"
+                    android:textSize="@dimen/sp_16" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

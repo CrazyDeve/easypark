@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/dp_300"
+    android:layout_height="@dimen/dp_400">
+
+    <ImageView
+        android:id="@+id/iv_background"
+        android:layout_width="@dimen/dp_300"
+        android:layout_height="@dimen/dp_400"
+        android:src="@mipmap/icon_updateback"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_150"
+        android:text="@string/发现新版本"
+        android:textColor="@color/color_245676"
+        android:textSize="@dimen/font_size_28"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_background"
+        app:layout_constraintRight_toRightOf="@+id/iv_background"
+        app:layout_constraintTop_toTopOf="@+id/iv_background" />
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_8"
+        android:textColor="@color/color_245676"
+        android:textSize="@dimen/font_size_16"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_background"
+        app:layout_constraintRight_toRightOf="@+id/iv_background"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        tools:text="2.0.0" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_background"
+        app:layout_constraintRight_toRightOf="@+id/iv_background"
+        app:layout_constraintTop_toBottomOf="@id/tv_version"
+        app:layout_constraintBottom_toTopOf="@+id/tv_update"
+        android:layout_marginBottom="@dimen/dp_8"
+        android:layout_marginRight="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_marginLeft="@dimen/dp_12">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/font_size_16"
+            tools:text="1.加入了自动更新功能\n2.修复了一些bug\n3.优化部分UI界面，增强用户体验。1.加入了自动更新功能\n2.修复了一些bug\n3.优化部分UI界面，增强用户体验。1.加入了自动更新功能\n2.修复了一些bug\n3.优化部分UI界面，增强用户体验。1.加入了自动更新功能\n2.修复了一些bug\n3.优化部分UI界面，增强用户体验。1.加入了自动更新功能\n2.修复了一些bug\n3.优化部分UI界面，增强用户体验。1.加入了自动更新功能\n2.修复了一些bug\n3.优化部分UI界面，增强用户体验。" />
+
+
+    </ScrollView>
+
+
+
+    <TextView
+        android:id="@+id/tv_update"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_48"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_24"
+        android:layout_marginRight="@dimen/dp_24"
+        android:layout_marginBottom="@dimen/dp_24"
+        android:background="@drawable/btn_shape_themecolor"
+        android:gravity="center"
+        android:text="立即升级"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_16"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_background"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_background"
+        app:layout_constraintRight_toRightOf="@+id/iv_background" />
+
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_24"
+        android:src="@mipmap/ic_delete"
+        app:layout_constraintLeft_toLeftOf="@id/iv_background"
+        app:layout_constraintRight_toRightOf="@+id/iv_background"
+        app:layout_constraintTop_toBottomOf="@+id/iv_background" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
